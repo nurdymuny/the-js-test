@@ -1,3 +1,5 @@
+#The Space-Time complexity of this program is O(n) as the loop runs for n times.
+
 var readLine = require('readline').createInterface(
 	process.stdin, process.stdout
 ),
@@ -27,7 +29,7 @@ readLine.on('line', function(line){
 	var num = parseInt(input_data.Number);
 	var sum = 0;
 	if(num % 2 == 0){
-		for(var i =1;i<num;i++){
+		for(var i =0;i<num;i++){
 			if(num % i == 0){
 				sum += i;
 				console.log(i);
